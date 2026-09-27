@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Tổng Hợp - Bootstrap 5</title>
+    <!-- Bước 1: Nhúng Bootstrap 5 CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Nhúng Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- Bước 2: Navbar với Font Awesome -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-home me-2"></i>MyWebsite
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-house me-1"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-info-circle me-1"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services"><i class="fas fa-concierge-bell me-1"></i> Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bước 3: Hero Section với Carousel (Slideshow) -->
+    <div id="heroCarousel" class="carousel slide shadow-sm" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="max-height: 450px;">
+                <img src="https://picsum.photos/1200/450?random=1" class="d-block w-100 object-fit-cover" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                    <h3>Chào mừng đến với MyWebsite</h3>
+                    <p>Trải nghiệm dịch vụ chuyên nghiệp hàng đầu.</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="max-height: 450px;">
+                <img src="https://picsum.photos/1200/450?random=2" class="d-block w-100 object-fit-cover" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                    <h3>Bố cục Linh hoạt & Responsive</h3>
+                    <p>Thiết kế đẹp mắt trên mọi thiết bị di động.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Bước 4: Section với Flexbox căn giữa nội dung -->
+    <section id="about" class="d-flex justify-content-center align-items-center bg-white py-5 shadow-sm my-4">
+        <div class="container text-center">
+            <h2 class="fw-bold text-primary mb-3">
+                <i class="fas fa-smile text-warning me-2"></i>Chào mừng đến với trang web của chúng tôi!
+            </h2>
+            <p class="text-muted lead mx-auto mb-0" style="max-width: 700px;">
+                Chúng tôi ứng dụng các công nghệ web hiện đại nhất như Flexbox, Bootstrap Utilities và Font Awesome để tạo ra trải nghiệm người dùng tuyệt vời.
+            </p>
+        </div>
+    </section>
+
+    <!-- Bước 5: Contact Form với Bootstrap Form -->
+    <section id="contact" class="container py-4 mb-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="card shadow-sm border-0 rounded-3">
+                    <div class="card-body p-4 p-md-5">
+                        <h3 class="card-title text-center text-dark fw-bold mb-4">
+                            <i class="fas fa-paper-plane text-primary me-2"></i>Liên Hệ Với Chúng Tôi
+                        </h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-semibold">Tên của bạn</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    <input type="text" class="form-control" id="name" placeholder="Nhập tên" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-semibold">Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                    <input type="email" class="form-control" id="email" placeholder="Nhập email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label fw-semibold">Nội dung thông điệp</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Nhập nội dung lời nhắn..."></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg fw-bold">
+                                    <i class="fas fa-paper-plane me-1"></i> Gửi Thông Tin
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 MyWebsite. Built with Bootstrap 5 & Font Awesome.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
