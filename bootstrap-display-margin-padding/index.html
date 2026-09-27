@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành Display, Margin, Padding & Flexbox</title>
+    <!-- Nhúng Bootstrap 5 CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Nhúng Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-light">
+
+    <!-- Header / Navbar đơn giản -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-layer-group me-2"></i>Bootstrap Utilities Practice
+            </a>
+        </div>
+    </nav>
+
+    <!-- Bước 2: Áp dụng Margin & Padding để điều chỉnh khoảng cách -->
+    <section class="container my-5 py-3 bg-white rounded shadow-sm text-center">
+        <h3 class="fw-bold text-primary mb-2">Khoảng cách được điều chỉnh bằng Margin & Padding</h3>
+        <p class="text-muted mb-0">Sử dụng lớp <code>my-5</code> (Margin top & bottom) và <code>py-3</code> (Padding top & bottom) để định dạng bố cục thoáng đẹp.</p>
+    </section>
+
+    <!-- Bước 1: Cấu trúc Grid với 3 cột kết hợp Flexbox -->
+    <section class="container my-4">
+        <h4 class="text-secondary mb-3"><i class="fas fa-th-large me-2"></i>Cấu Trúc Grid 3 Cột (Flexbox Alignment)</h4>
+        <div class="row g-3">
+            <div class="col-md-4 d-flex justify-content-center align-items-center bg-light p-3 border rounded">
+                <p class="mb-0 fw-bold text-dark"><i class="fas fa-cube me-2 text-primary"></i>Phần 1</p>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center align-items-center bg-secondary p-3 text-white rounded">
+                <p class="mb-0 fw-bold"><i class="fas fa-cube me-2 text-warning"></i>Phần 2</p>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center align-items-center bg-light p-3 border rounded">
+                <p class="mb-0 fw-bold text-dark"><i class="fas fa-cube me-2 text-primary"></i>Phần 3</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bước 3: Sử dụng Display Property để hiển thị ẩn hiện nội dung -->
+    <section class="container my-4">
+        <h4 class="text-secondary mb-3"><i class="fas fa-desktop me-2"></i>Thử Nghiệm Display Property Responsive</h4>
+        
+        <!-- Khối 1: Chỉ hiển thị trên màn hình lớn hơn hoặc bằng 768px (Desktop/Tablet) -->
+        <div class="d-none d-md-block bg-warning text-center p-3 rounded mb-3 shadow-sm">
+            <p class="mb-0 fw-bold text-dark">
+                <i class="fas fa-laptop me-2"></i>Nội dung này chỉ hiển thị trên màn hình lớn hơn hoặc bằng 768px (&ge; md)!
+            </p>
+        </div>
+
+        <!-- Khối 2: Chỉ hiển thị trên màn hình nhỏ dưới 768px (Mobile) -->
+        <div class="d-block d-md-none bg-info text-white text-center p-3 rounded shadow-sm">
+            <p class="mb-0 fw-bold">
+                <i class="fas fa-mobile-alt me-2"></i>Nội dung này chỉ hiển thị trên màn hình di động (&lt; 768px)!
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Practice Utilities. Built with Bootstrap 5.</p>
+        </div>
+    </footer>
+
+    <!-- Nhúng Bootstrap 5 JavaScript Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
