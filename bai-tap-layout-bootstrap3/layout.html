@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Shopping Mall - CodeGym Layout</title>
+    <!-- Bootstrap 3.3.7 CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Poly CSS Custom -->
+    <link rel="stylesheet" href="poly.css">
+    <!-- jQuery & Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Header -->
+    <header class="row">
+        <div class="shopping-mall">
+            <h1>ONLINE SHOPPING MALL</h1>
+            <h5>THE CENTER POINT OF THE PROFESSIONAL PROGRAMMING</h5>
+        </div>
+        <!-- Ảnh nhân viên góc phải banner theo mẫu -->
+        <img class="pull-right header-img" src="http://demo.codegym.vn/web/15/layout-bootstrap/images/header-object.png" alt="Header Banner" onerror="this.src='https://via.placeholder.com/350x110?text=Header+Banner'">
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="#"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Giới thiệu</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Liên hệ</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Góp ý</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Hỏi đáp</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <span class="glyphicon glyphicon-user"></span> Tài khoản <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Đăng nhập</a></li>
+                            <li><a href="#">Đăng ký</a></li>
+                            <li><a href="#">Quên mật khẩu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Tiếng Việt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content & Sidebar -->
+    <div class="row">
+        
+        <!-- ARTICLE: Danh sách 6 sản phẩm (mỗi hàng 3 sản phẩm) -->
+        <article class="col-sm-9">
+            <div class="row">
+                <!-- SP 1 -->
+                <div class="col-sm-4 poly-prod">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Nokia</div>
+                        <div class="panel-body">
+                            <img src="http://demo.codegym.vn/web/15/layout-bootstrap/images/computer.png" alt="Nokia Computer" onerror="this.src='https://via.placeholder.com/200x150?text=Nokia+Laptop'">
+                        </div>
+                        <div class="panel-footer">$ 100.25</div>
+                    </div>
+                </div>
+                <!-- SP 2 -->
+                <div class="col-sm-4 poly-prod">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Nokia</div>
+                        <div class="panel-body">
+                            <img src="http://demo.codegym.vn/web/15/layout-bootstrap/images/computer.png" alt="Nokia Computer" onerror="this.src='https://via.placeholder.com/200x150?text=Nokia+Laptop'">
+                        </div>
+                        <div class="panel-footer">$ 100.25</div>
+                    </div>
+                </div>
+                <!-- SP 3 -->
+                <div class="col-sm-4 poly-prod">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Nokia</div>
+                        <div class="panel-body">
+                            <img src="http://demo.codegym.vn/web/15/layout-bootstrap/images/computer.png" alt="Nokia Computer" onerror="this.src='https://via.placeholder.com/200x150?text=Nokia+Laptop'">
+                        </div>
+                        <div class="panel-footer">$ 100.25</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- SP 4 -->
+                <div class="col-sm-4 poly-prod">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Nokia</div>
+                        <div class="panel-body">
+                            <img src="http://demo.codegym.vn/web/15/layout-bootstrap/images/computer.png" alt="Nokia Computer" onerror="this.src='https://via.placeholder.com/200x150?text=Nokia+Laptop'">
+                        </div>
+                        <div class="panel-footer">$ 100.25</div>
+                    </div>
+                </div>
+                <!-- SP 5 -->
+                <div class="col-sm-4 poly-prod">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Nokia</div>
+                        <div class="panel-body">
+                            <img src="http://demo.codegym.vn/web/15/layout-bootstrap/images/computer.png" alt="Nokia Computer" onerror="this.src='https://via.placeholder.com/200x150?text=Nokia+Laptop'">
+                        </div>
+                        <div class="panel-footer">$ 100.25</div>
+                    </div>
+                </div>
+                <!-- SP 6 -->
+                <div class="col-sm-4 poly-prod">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Nokia</div>
+                        <div class="panel-body">
+                            <img src="http://demo.codegym.vn/web/15/layout-bootstrap/images/computer.png" alt="Nokia Computer" onerror="this.src='https://via.placeholder.com/200x150?text=Nokia+Laptop'">
+                        </div>
+                        <div class="panel-footer">$ 100.25</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- ASIDE: Thanh bên (Giỏ hàng, Tìm kiếm, Chủng loại) -->
+        <aside class="col-sm-3">
+            <!-- Giỏ hàng -->
+            <div class="poly-cart">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="col-xs-5">
+                            <img src="http://demo.codegym.vn/web/15/layout-bootstrap/images/shoppingcart.gif" alt="Cart" class="img-responsive" onerror="this.src='https://via.placeholder.com/60x60?text=Cart'">
+                        </div>
+                        <div class="col-xs-7">
+                            <ul>
+                                <li>100 ITEMS</li>
+                                <li>$56.8</li>
+                                <li><a href="#">XEM GIỎ HÀNG</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ô tìm kiếm -->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form>
+                        <input type="text" placeholder="Keywords" class="form-control">
+                    </form>
+                </div>
+            </div>
+
+            <!-- Danh mục chủng loại -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    <strong>Chủng Loại</strong>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">Điện thoại di động</a>
+                    <a href="#" class="list-group-item">Máy tính xách tay</a>
+                    <a href="#" class="list-group-item">Máy tính để bàn</a>
+                    <a href="#" class="list-group-item">Quạt máy</a>
+                    <a href="#" class="list-group-item">Tivi</a>
+                    <a href="#" class="list-group-item">Tủ lạnh</a>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+</div>
+
+</body>
+</html>
